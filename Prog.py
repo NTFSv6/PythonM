@@ -178,7 +178,6 @@
 # [5] Use Square Brackets To Access Element
 # [6] Enable Accessing Parts Of Strings, Tuples or Lists
 # ---------------------------------
-
 # Indexing ( Access Single Item )
 
 # myString = "I Love Python"
@@ -268,15 +267,11 @@
 # h = "ELDEEP"
 
 # print(h.lower())
-
 # ? -------------------------------------- 014 ------------------------------------------------------
-
 # ---------------------
 # -- Strings Methods --
 # ---------------------
-
 # ? split() rsplit() تستخدم لتقطيع المسطره الذي تكون بين الكلام
-
 # a = "I Love Python and PHP and MySQL"
 # print(a.split())
 
@@ -290,20 +285,17 @@
 # print(d.rsplit("-", 3))  # ? يعمل تقطيع من الشمال
 
 # ? center(العدد ,"") تستخدم لاضافه حروف قبل وبعد المتغير الذي سوف تستخدمه ويتم العد من بعد عدد الحروف الذي لديك
-
 # e = "Osama"
 # print(e.center(9))  # Spaces
 # print(e.center(9, "#"))  # Hashes
 # print(e.center(15, "@"))  # @
 
 # ? count("string",Start,End) تستخدم للبحث عن عدد وجود الحرف او الكلمه الذي سوف تستخدمها
-
 # f = "I Love Python and PHP Because PHP PHP is Easy"
 # print(f.count("PHP"))  # 2 PHP Words
 # print(f.count("PHP", 0, 34))  # ? تستخدم للبحث من اول كذا الي كذا
 
 # ? swapcase() تجعل الحرف بدل ما يكون صغير تجعله كبير والعكس
-
 # g = "I Love Python"
 # h = "i lOVE pYTHON"
 
@@ -311,7 +303,6 @@
 # print(h.swapcase())
 
 # ? startswith() تستخدم لمعرفه المتغير يبداء بشي معين الذي سوف تضعه ام لا
-
 # i = "I Love Python JavaScript"
 # print(i.startswith("I"))
 # print(i.startswith("J", 14))
@@ -323,22 +314,17 @@
 # print(j.endswith("S"))
 # print(j.endswith("n", 7, 13))
 # print(j.endswith("e", 2, 6))
-
 # ? -------------------------------------- 015 ------------------------------------------------------
-
 # ---------------------
 # -- Strings Methods --
 # ---------------------
-
 # ? index(SubString, Start, End) تستخدم للبحث عن كلمه او حرف معين ويمكن وضع نهايه وبدايه
-
 # a = "I Love Python"
 # print(a.index("P"))  # Index Number 7
 # print(a.index("P", 0, 10))  # Index Number 7
 #! print(a.index("P", 0, 5))  # Through Error اذا لم يجد الشي الذي تبحث عنه سوف يعمل Error
 
 # ? find(SubString, Start, End)  تستخدم للبحث عن كلمه او حرف معين ويمكن وضع نهايه وبدايه
-
 # b = "I Love Python"
 # print(b.find("o"))  # Index Number 3
 # print(b.find("P", 0, 10))  # Index Number 7
@@ -346,7 +332,6 @@
 
 #! rjust(Width, Fill Char) نضع كلمه او حرف معين علي حسب ما تكتب انت من جها اللمين
 #! ljust(Width, Fill Char) نضع كلمه او حرف معين علي حسب ما تكتب انت من جها الشمال
-
 # c = "Osama"
 # print(c.rjust(10))
 # print(c.rjust(10, "#"))
@@ -356,7 +341,6 @@
 # print(d.ljust(10, "#"))
 
 #! splitlines() تستخدم لكي تسترجع لك list اذا كانت العناصر ليست علي سطر واحد
-
 # e = """First Line
 # Second Line
 # Third Line"""
@@ -364,12 +348,10 @@
 # print(e.splitlines())
 
 # ? expandtabs() تجعلك تتحكم في عدد ال TAB
-
 # g = "Hello\tWorld\tI\tLove\tPython"
 # print(g.expandtabs(10))
 
 # ? istitle() تستخدم لمعرفه هل اول حرف فقط في كل جمله يبداء بحرف كبير ام لا
-
 # a = "Hell And WELCOME Snao My Wndy"
 # b = "Hello"
 # c = "22 Names"
@@ -381,19 +363,16 @@
 # print(d.istitle())
 
 # ? isspace() تستخدم لمعرفه هل الشي المستخدم Space ام لا مسطره
-
 # txt = "    "
 # print(txt.isspace())
 
 # ? islower() تستخدم لمعرفه هل جميع الحروف صغيره ام لا
-
 # five = 'i love python'
 # six = 'I Love Python'
 # print(five.islower())
 # print(six.islower())
 
 # ? isupper() تستخدم لمعرفه هل جميع الحروف كبيره
-
 # a = "Hello World!"
 # b = "hello 123"
 # c = "MY NAME IS PETER"
@@ -403,7 +382,6 @@
 # print(c.isupper())
 
 # ? isidentifier() لمعرفه هل هذا الاسم يمكن استخدمه لعمل متغير ام لا
-
 # seven = "osama_elzero"
 # eight = "OsamaElzero100"
 # nine = "Osama@Elzero100"
@@ -413,21 +391,18 @@
 # print(nine.isidentifier())
 
 # ? isalpha() تستخدم لمعرفه هل الحروف الموجوده من (a-z,A-Z)
-
 # x = "AaaaaBbbbbb"
 # y = "AaaaaBbbbbb111"
 # print(x.isalpha())
 # print(y.isalpha()
 
 # ? isalnum() تستخدم لكي تعرف هل كل الموجود ارقام وحروف
-
 # u = "AaaaaBbbbbb"
 # z = "AaaaaBbbbbb111#"
 # print(u.isalnum())
 # print(z.isalnum())
 
 # ? isnumeric() (0-9) تستخدم لمعرفه هل المتغر او الشي المستخدم ارقام
-
 # a = "\u0030"  # unicode for 0
 # b = "\u00B2"  # unicode for &sup2;
 # c = "omar254"
@@ -439,13 +414,10 @@
 # print(c.isnumeric())
 # print(d.isnumeric())
 # print(e.isnumeric())
-
 # ? -------------------------------------- 016 ------------------------------------------------------
-
 # ---------------------
 # -- Strings Methods --
 # ---------------------
-
 # ? replace(Old Value, New Value, Count) تستخدم لتبديل شي معين بشي اخر وعلي حسب كام مره تحتاج ان تبدله
 
 # a = "Hello One Two Three One One"
@@ -462,13 +434,10 @@
 # print(type(", ".join(myList)))
 # ttt = "KANO"
 # print("-".join(ttt)) output => K-A-N-O
-
 # ? -------------------------------------- 017 ------------------------------------------------------
-
 # ------------------------
 # ? -- Strings Formatting -- هذا الشكل القديم لل
 # ------------------------
-
 # name = "Omar"
 # age = 22
 # rank = 1
@@ -484,31 +453,25 @@
 #! %s => Omar > String عند استخدام هذا تعني ان اول متغير سوف تستخدمه هو
 #! %d => 22 > Number عند استخدام هذا تعني ان اول متغير سوف تستخدمه هو
 #! %f => 1.000 > Float عند استخدام هذا تعني ان اول متغير سوف تستخدمه هو
-
 # n = "Omar"
 # lg = "JavaScript"
 # m = 2
 # print("My Name Is %s And Learn Programing in %d MOnth My Lang Learing Is %s" % (n, m, lg))
 
 #! Control Floating Point Number للتحكم في عدد الاصفار الذي تاتي بعد العلامه العشريه باستخدام ال %f
-
 # myNumber = 10
 # print("My Number is: %d" % myNumber)
 # print("My Number is: %f" % myNumber)
 # print("My Number is: %.5f" % myNumber)  # ? My Number is: 10.00000
 
 #! Truncate String للتحكم في عدد الحروف الذي تريد عرضها ف ال %s
-
 # myLongString = "Hello Peoples of Elzero Web School I Love You All"
 # print("Message is %s" % myLongString)
 # print("Message is %.14s" % myLongString)
-
 # ? -------------------------------------- 018 ------------------------------------------------------
-
 # ---------------------------------
 # -- Strings Formatting New Ways --
 # ---------------------------------
-
 # name = "Omar"
 # age = 22
 # rank = 20
@@ -521,7 +484,6 @@
 # ? {:s} => String عند استخدام هذا تعني ان اول متغير سوف تستخدمه هو
 # ? {:d} => Number عند استخدام هذا تعني ان اول متغير سوف تستخدمه هو
 # ? {:f} => Float عند استخدام هذا تعني ان اول متغير سوف تستخدمه هو
-
 # n = "Omar"
 # l = "Python"
 # y = 6
@@ -529,21 +491,18 @@
 # print("My Name is {} Iam {} Developer With {:d} Years Exp".format(n, l, y))
 
 # ? {:.3f} Control Floating Point Number للتحكم في عدد الاصفار الذي تاتي بعد العلامه العشريه باستخدام ال
-
 # myNumber = 10
 # print("My Number is: {:d}".format(myNumber))
 # print("My Number is: {:f}".format(myNumber))
 # print("My Number is: {:.3f}".format(myNumber))
 
 # ? {:.5s} Truncate String تستخدم للتحكم في عدد الحروف الذي تريد عرضها ف ال
-
 # myLongString = "Hello Peoples of Elzero Web School I Love You All"
 # print("Message is {}".format(myLongString))
 # print("Message is {:.23}".format(myLongString))
 # print("Message is {:.13s}".format(myLongString))
 
 # ? {:_d} Format Money بعض العلامات تستخدم لكي تضعها بين كل 3 ارقام
-
 # myMoney = 500162350198
 
 # print("My Money in Bank Is: {:d}".format(myMoney))
@@ -616,14 +575,11 @@
 # class Plant(object):
 #     type = 'Test Jango'
 
-
 # print('{p.type}'.format(p=Plant()))
-
 
 # class Plant(object):
 #     type = 'tree'
 #     kinds = [{'name': 'oak'}, {'name': 'maple'}]
-
 
 # print('{p.type}: {p.kinds[1][name]}'.format(p=Plant()))
 
@@ -636,13 +592,10 @@
 # print('{:{prec}} = {:{prec}}'.format('Gibberish', 2.7182, prec='.3'))
 
 # print('{:{}{}{}.{}}'.format(2.7182818284, '>', '+', 10, 3))
-
 # ? -------------------------------------------------------------------------------------------- EX 011-018
-
 # ---------------------------------
 #! -- Example --
 # ---------------------------------
-
 # "Hello 'Osama', How You Doing \ """ Your Age Is "38"" + And Your Country Is: Egypt
 # n = "Omar"
 # a = 22
@@ -689,7 +642,6 @@
 # print(num3.zfill(4))  # 0950
 # print(num4.zfill(4))  # 1500
 #! ------------------------------------------------------------------------------------------------------------
-
 # name_one = "Osama"
 # name_two = "Osama_Elzero"
 
@@ -697,7 +649,6 @@
 # print(name_one.rjust(20, "#"))  # ###############Osama
 # print(name_two.rjust(20, "#"))# ########Osama_Elzero
 #! ------------------------------------------------------------------------------------------------------------
-
 # name_one = "OSamA"
 # name_two = "osaMA"
 
@@ -705,7 +656,6 @@
 # print(name_one.swapcase())  # osAMa
 # print(name_two.swapcase())  # OSAma
 #! ------------------------------------------------------------------------------------------------------------
-
 # msg = "I Love Python And Although Love Elzero Web School"
 
 # Needed Output
@@ -716,13 +666,11 @@
 # Needed Output
 # print(msg.replace("<3", "Love", 1))  # I Love Python And Although <3 Elzero
 #! ------------------------------------------------------------------------------------------------------------
-
 # msg = "I <3 Python And Although <3 Elzero"
 
 # Needed Output
 # print(msg.replace("<3","Love"))# I Love Python And Although Love Elzero
 #! ------------------------------------------------------------------------------------------------------------
-
 # name = "Omar"
 # age = 22
 # country = "Egypt"
@@ -741,14 +689,11 @@
 # last_test = "Brano Is Here Learn Python And JavaScript Here"
 # Brano Is HowEnd Learn Python And JavaScript HowEnd
 # print(last_test.replace("Here", "HowEnd", 2))
-
 # ? -------------------------------------- 019 ------------------------------------------------------
 # -------------
 # -- Numbers --
 # -------------
-
 # ? Integer هذا نوع الذي يكون رقم لسه به اي كسور
-
 # print(type(1))
 # print(type(100))
 # print(type(10))
@@ -756,7 +701,6 @@
 # print(type(-110))
 
 # ? Float هذا نوع يكون بجانبه كسور
-
 # print(type(1.500))
 # print(type(100.99))
 # print(type(-10.99))
@@ -785,9 +729,7 @@
 # print(complex(10.52))  # ? -- تحويل الي نوع complex
 
 # print(float(10+95j)); print(int(10+9j)) # ERROR
-
 # ? -------------------------------------- 020 ------------------------------------------------------
-
 # --------------------------
 # -- Arithmetic Operators --
 # --------------------------
@@ -799,7 +741,6 @@
 # ? [**] Exponent الاوس
 # ? [//] Floor Division
 # --------------------------
-
 # Addition
 
 # print(10 + 30)  # 40
@@ -826,7 +767,6 @@
 # print(int(100 / 20))  # 5
 
 # ? Modulus باقي القسمه لو الرقم المقسوم عليه هيساوي عدد صحيح يبقي تساوي صفر غير كده يبقي تقربه لاقرب رقم وسوف تظهر النتيجه
-
 # print(8 % 2)  # 0
 # print(9 % 2)  # 1
 # print(20 % 5)  # 0
@@ -840,7 +780,6 @@
 # print(5 * 5 * 5 * 5)  # 625
 
 # ? Floor Division تستخدم لمعرفه اقرب رقم يقبل القسمه علي الرقم المقابل له
-
 # print(100 // 20)  # 5
 # print(119 // 20)  # 5
 # print(120 // 20)  # 6
@@ -985,7 +924,8 @@
 # f.insert(0, "Test")
 # f.insert(-1, "Test")
 # print(f)
-# todo pop() تستخدم لوضع الانديكس ويرجع لك بقيمه هذا الانديكس
+# todo pop() تستخدم ايضا لحذف اخر عنصر اذا لم تعطيها index
+# todo pop() تستخدم لوضع الانديكس ويرجع لك بقيمه هذا الانديكس ويحذفه من ال list
 # g = [1, "Omar", 3, 4, 5, "A", "B"]
 # print(g.pop(4))
 # print(len(g)*g.pop(4))
